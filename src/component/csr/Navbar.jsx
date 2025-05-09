@@ -9,7 +9,7 @@ const menuItems = [
   { label: "About", href: "/about" },
   { label: "Car Accident", href: "/car-accident" },
   { label: "Personal Injury", href: "/personal-injury" },
-  { label: "Contact", href: "/contact" },
+  { label: "Contact", href: "/contact-us" },
 ];
 
 const Navbar = () => {

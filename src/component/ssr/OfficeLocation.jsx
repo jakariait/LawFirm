@@ -4,7 +4,7 @@ import Link from "next/link";
 const OfficeLocation = () => {
   return (
     <div className="flex items-center justify-center  bg-gray-50">
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-2 xl:container xl:mx-auto p-10  w-4xl">
+      <div className="grid grid-cols-1 md:grid-cols-5 gap-2  xl:container xl:mx-auto p-10  w-4xl">
         {/* Google Map */}
         <div className="h-80 md:h-full col-span-3">
           <iframe
@@ -17,7 +17,7 @@ const OfficeLocation = () => {
         </div>
 
         {/* Address Info */}
-        <div className="col-span-2 flex flex-col justify-center space-y-4 text-white p-5 bg-[#313131] w-full md:w-3/4">
+        <div className="col-span-2 flex flex-col justify-center space-y-4 text-white p-5 bg-[#313131] w-full md:w-3/4 mt-10 md:mt-0">
           <h2 className="text-2xl font-bold text-[#E6AE47]">Powell Law Firm</h2>
 
           <div>
