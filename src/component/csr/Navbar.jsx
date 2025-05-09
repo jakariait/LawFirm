@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react";
 const menuItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Car Accident", href: "/services" },
-  { label: "Personal Injury", href: "/services" },
+  { label: "Car Accident", href: "/car-accident" },
+  { label: "Personal Injury", href: "/personal-injury" },
   { label: "Contact", href: "/contact" },
 ];
 
@@ -20,7 +20,9 @@ const Navbar = () => {
       <div className="xl:container xl:mx-auto px-4 py-2 flex justify-between items-center">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <Image src="/logo.png" alt="Logo" width={200} height={80} />
+          <Link href="/">
+            <Image src="/logo.png" alt="Logo" width={200} height={80} />
+          </Link>
         </div>
 
         {/* Menu Items (visible on md+, hidden if a mobile menu is open) */}
@@ -38,10 +40,11 @@ const Navbar = () => {
         </ul>
 
         {/* Hamburger Button */}
-        <div className="md:hidden cursor-pointer text-[#E6AE47] border-1 border-[#E6AE47] flex items-center justify-center">
+        <div className="md:hidden text-[#E6AE47] border-1 border-[#E6AE47] flex items-center justify-center">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle Menu"
+            className={"cursor-pointer"}
           >
             {menuOpen ? <X size={34} /> : <Menu size={34} />}
           </button>

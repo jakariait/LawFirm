@@ -51,7 +51,7 @@ const Hero = () => {
           </p>
 
           <div className={"grid md:grid-cols-2 gap-4 pb-4"}>
-            <PrimaryButton href="/contact">Free Consultation</PrimaryButton>
+            <PrimaryButton href="/contact-us">Free Consultation</PrimaryButton>
 
             <div className={"flex  items-center gap-4"}>
               <span className={"text-white"}>Play Video</span>

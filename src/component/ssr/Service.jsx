@@ -37,7 +37,7 @@ const Service = () => {
               have on a person’s life. They have the compassion and resources to
               help when you need it most.
             </p>
-            <PrimaryButton> Personal Injury </PrimaryButton>
+            <PrimaryButton href={"/personal-injury"}> Personal Injury </PrimaryButton>
           </div>
         </div>
 
@@ -72,7 +72,7 @@ const Service = () => {
               for a case analysis. Let Powell Law Firm fight for your rights and
               the compensation you deserve.
             </p>
-            <PrimaryButton> Car Accident </PrimaryButton>
+            <PrimaryButton href={"/car-accident"}> Car Accident </PrimaryButton>
           </div>
         </div>
       </div>
